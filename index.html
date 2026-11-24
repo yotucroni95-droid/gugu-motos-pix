@@ -48,12 +48,12 @@
 <main>
   <img class="logo" src="assets/logo.jpg" alt="Logo Gugu Motos" width="132" height="132">
   <h1>Gugu Motos</h1>
-  <p class="sub">Oficina de motos · Pagamento via Pix</p>
+  <p class="sub" data-editavel="topo.subtitulo" data-rotulo="Texto embaixo do nome">Oficina de motos · Pagamento via Pix</p>
 
-  <section class="card" aria-labelledby="pix-titulo">
+  <section class="card" aria-labelledby="pix-titulo" data-grupo="Pix">
     <span class="tag" id="pix-titulo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5 21.5 12 12 21.5 2.5 12z" stroke="#32BCAD" stroke-width="2" stroke-linejoin="round"/><path d="m8 12 4-4 4 4-4 4z" fill="#32BCAD"/></svg>Chave Pix</span>
-    <p class="key" id="key">(87) 98133-4563</p>
-    <p class="type">Celular</p>
+    <p class="key" id="key" data-editavel="pix.chave" data-rotulo="Chave Pix" data-pix>(87) 98133-4563</p>
+    <p class="type" data-editavel="pix.tipo" data-rotulo="Tipo da chave" data-opcoes="Celular|CPF|CNPJ|E-mail|Chave aleatória">Celular</p>
     <button class="btn" id="copy" type="button" aria-describedby="key">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
       <span id="copy-txt">Copiar chave Pix</span>
@@ -64,7 +64,7 @@
       <li><b>2</b><span>Abra o app do seu banco e escolha <strong>Pix › Pagar</strong></span></li>
       <li><b>3</b><span>Cole a chave, digite o valor e confirme</span></li>
     </ol>
-    <p class="note">Confira se o nome do recebedor está certo antes de confirmar.</p>
+    <p class="note" data-editavel="pix.aviso" data-rotulo="Aviso embaixo dos passos">Confira se o nome do recebedor está certo antes de confirmar.</p>
   </section>
 
   <p class="foot">Feito por <a href="https://yotucroni95-droid.github.io/orbitavirtual/">Órbita Virtual</a></p>
@@ -90,5 +90,6 @@
     else fallback();
   });
 </script>
+<script type="module" src="conteudo.js?v=1"></script>
 </body>
 </html>
